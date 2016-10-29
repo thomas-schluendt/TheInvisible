@@ -1,0 +1,16 @@
+.navbar{
+  background-color: #001A3A;
+}
+#header{
+padding-top: 12px;
+height: 48px;
+
+}
+#footer{
+  height: 50px;
+  color: #4565ad;
+}
+
+.content{
+  margin-top: 60px;
+}
