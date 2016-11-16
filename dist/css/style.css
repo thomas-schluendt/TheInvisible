@@ -1,6 +1,7 @@
 .navbar{
   background-color: #001A3A;
 }
+
 #header{
 padding-top: 12px;
 height: 60px;
@@ -8,8 +9,8 @@ height: 60px;
 background-image: url(img/platzhalterbutton);
 background-repeat: no-repeat;
 background-position: center;
-
 }
+
 #footer{
   height: 50px;
   color: #4565ad;
@@ -18,10 +19,19 @@ background-position: center;
 .content{
   margin-top: 60px;
 }
+
 #menubutton{
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border-style: none;
 }
-#logo{
-  padding-right: 300px;
+
+.split{
+  display: inline-block;
+  height: 35px;
+  width: 1px;
+  margin:0px 3px -15px 3px;
+  padding: 0px;
+  border-left: solid #4565ad 1px;
 }
