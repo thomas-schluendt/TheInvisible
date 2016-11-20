@@ -1,28 +1,23 @@
 .navbar{
   background-color: #001A3A;
 }
-
 #header{
 padding-top: 12px;
 height: 60px;
+<<<<<<< HEAD
 }
+=======
 
+background-image: url(img/platzhalterbutton);
+background-repeat: no-repeat;
+background-position: center;
+>>>>>>> 64f6238f24c0741f3510a1bc3b39e8015b45d633
+
+}
 #footer{
   height: 50px;
   color: #4565ad;
 }
-
-.content{
-  margin-top: 60px;
-}
-
-#menubutton{
-  height: 36px;
-  width: 36px;
-  background-color: transparent;
-  border-style: none;
-}
-
 .split{
   display: inline-block;
   height: 35px;
@@ -30,6 +25,25 @@ height: 60px;
   margin:0px 3px -15px 3px;
   padding: 0px;
   border-left: solid #4565ad 1px;
+}
+
+.content{
+  margin-top: 60px;
+}
+#menubutton{
+  height: 36px;
+  width: 36px;
+  background-color: transparent;
+  border-style: none;
+}
+#logo{
+  padding-right: 300px;
+}
+#illustration-left{
+padding-right: 310px;
+}
+#illustration-right{
+  padding-left:340px;
 }
 
 .dropdown-menu{
