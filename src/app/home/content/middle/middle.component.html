@@ -1,0 +1,20 @@
+<section class="row"id="content">
+  <section class="col-xs-4">
+    <img *ngFor="let illustration of siteIllustrations" [src]="'../../../../'+illustration.illustrationLeft" class="illustration-left" />
+  </section>
+  <section class="col-xs-4 col-centered" >
+    <section class="bubble" *ngFor="let cont of siteContent">
+      <section class="bubble-text col-xs-12">
+        <p>
+          {{cont.studentText}}
+        </p>
+      </section>
+    </section>
+  </section>
+  <section class="col-xs-4">
+    <img *ngFor="let illustration of siteIllustrations" [src]="'../../../../'+illustration.illustrationRight" class="illustration-right" />
+
+    <button class="buttons" id="buttonUp" type="button" (click)="scrollWin(0,-80)"> <img src="img/chapter10/scrollUp.png"> </button>
+    <button class="buttons" id="buttonDown" type="button" (click)="scrollWin(0,80)"> <img src="img/chapter10/scrollDown.png"> </button>
+  </section>
+</section>

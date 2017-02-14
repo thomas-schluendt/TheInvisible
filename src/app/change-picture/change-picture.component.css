@@ -1,0 +1,47 @@
+#pictureContainer{
+  width: 800px;
+}
+
+.pictureRowMargin {
+  margin: 10px;
+}
+
+#pictureCurrent {
+  margin-top: 100px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+#siteTitle {
+  font-size: 20pt;
+  font-family: widolte_regular;
+  margin-bottom: 10px;
+}
+
+.divCenter {
+  text-align: center;
+}
+
+.saveButton {
+  border: solid;
+  border-color: transparent;
+  background-color: #001a3a;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  color: white;
+  height: 40px;
+}
+
+.cancelButton {
+  border: solid;
+  border-color: transparent;
+  background-color: #d3ddf2;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  color: #4565ad;
+  height: 40px;
+}

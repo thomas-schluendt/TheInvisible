@@ -1,0 +1,90 @@
+input[placeholder] {
+  font-style:normal;
+  font-size: 13pt;
+  font-family: "Brandon Grotesque";
+  color: grey;
+}
+
+input[type=text] {
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0px 0px 0px;
+    display: inline-block;
+    border: 2px solid #8da6d6;
+    height: 40px;
+    color: #001a3a;
+    font-size: 13px;
+    font-family: "Roberto";
+}
+
+input[type=password] {
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+    margin: 2px 0px 2px 0px;
+    display: inline-block;
+    border: 2px solid #8da6d6;
+    height: 40px;
+    color: #001a3a;
+    font-size: 13px;
+    font-family: "Roberto";
+}
+
+button {
+    background-color: #001a3a;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 5px 0;
+}
+
+img.avatar {
+    width: 400px;
+}
+#eingabe{
+  width: 360px;
+}
+
+.container1 {
+    text-align: center;
+    padding: 16px;
+}
+
+.container2 {
+    text-align: center;
+    padding: 16px;
+}
+
+.psw {
+    font-size: 13px;
+    color: #8da6d6;
+}
+
+.footer {
+  text-align: center;
+  font-size: 9px;
+  color: #8da6d6;
+}
+
+#footerhead {
+  color: #001a3a;
+}
+
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}

@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<div id="pictureCurrent" class="divCenter">
+  <img [src]="pictureCurrentUrl" height="70" width="70" />
+</div>
+
+<p id="siteTitle" class="divCenter">PROFILBILD ÄNDERN</p>
+
+<div class="divCenter">
+  <button type="submit" class="cancelButton">ABBRECHEN</button>
+  <button type="submit" class="saveButton">SPEICHERN</button>
+</div>
+
+<div align="center">
+  <div id="pictureContainer">
+    <img *ngFor="let avatar of avatarPictures" [src]="'../../../'+avatar.avatarBigUrl" height="70px" width="70px"
+         class="pictureRowMargin" (click)="changePictureCurrent('../../../'+avatar.avatarBigUrl)"/>
+  </div>
+</div>
+
+<div class="divCenter">
+  <button type="submit" class="cancelButton">ABBRECHEN</button>
+  <button type="submit" class="saveButton">SPEICHERN</button>
+</div>
+
+<app-footer></app-footer>
