@@ -1,0 +1,47 @@
+﻿<img src="../../../images/login/header.png" height="252" width="562" id="picture"/><br>
+
+<!--Eingabefeld Benutzername-->
+<div class="container1">
+
+  <form>
+
+    <input type="text" placeholder="BENUTZERNAME" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" class="field-input inputLogin"
+           id="LoginUser"><br>
+
+    <input type="password" placeholder="PASSWORT" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="field-input inputLogin"
+           id="LoginPassword"><br>
+
+
+
+    <button id="loginButton" type="submit" (click)="login(username, password, savedLogin)" class="buttonLogin"
+            style="color: white">LOS!
+    </button>
+    <br>
+    <div class="container2">
+
+  <span class="psw">Sie möchten mit CHECK! arbeiten?
+    <br>
+    <a href="#">Jetzt registieren.</a></span>
+    </div>
+    <div class="footer">
+      <img src="images\login\footer.png">
+      <div>
+        <p class="footerhead">edition 2016 dark night blue 1.0</p>
+      </div>
+      <div>
+        <p class="footer-text">CHECK! und CHECK! Lehrerzimmer sind Produkte des
+          Raup&amp;Ritter Verlag und der OnWerk Softwareagentur Mannheim<br/>
+          <a href="http://www.raupundritter.com" target="_blank" id="link">www.raupundritter.com</a>
+          <a href="http://www.check-lehrerzimmer.com/contact/" target="_blank" id="link">Kontakt</a>
+          <a href="http://www.check-lehrerzimmer.com/impressum/" target="_blank" id="link">Impressum</a>
+          <a href="http://www.check-lehrerzimmer.com/preise/" target="_blank" id="link">Preise</a>
+          <a href="http://www.check-lehrerzimmer.com/hilfe/erste-schritte/" target="_blank" id="link">Hilfe</a>
+
+        </p>
+      </div>
+
+
+</div>
+    <app-notification-advice [(visible)]="notificationService.advice.show"></app-notification-advice>
+    <app-notification-confirmation [(visible)]="notificationService.confirmation.show"></app-notification-confirmation>
+    <app-notification-warning [(visible)]="notificationService.warning.show"></app-notification-warning>

@@ -1,0 +1,52 @@
+.displayed {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dialog {
+  position: fixed;
+  height: 200px;
+  width: 300px;
+  left: calc((100% - 300px) / 2);
+  top: calc((100% - 200px) / 2);
+  background-color: #001a3a;
+  border-style: solid;
+  border-radius: 12px;
+  border-color: white;
+  z-index: 1032;
+}
+
+#dialogText {
+  width: 270px;
+  height: 80px;
+  margin: 5px;
+  color: white;
+  text-align: center;
+  font-family: roboto-thin;
+}
+
+.dialog_close-btn {
+  border: 0;
+  height:30px;
+  width:30px;
+  background: url(../../../images/delete.png) no-repeat;
+  color: #2d2d2d;
+  position: absolute;
+  top: 5px;
+  right: -5px;
+  margin-right: 10px;
+}
+
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  opacity: 0.5;
+  z-index: 1031;
+}

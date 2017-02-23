@@ -1,0 +1,48 @@
+<div [style.background]="bodyDynamics.chapterColor" id="content">
+
+  <div id="illustrationLeft">
+    <img [src]="bodyDynamics.chapterFlag" class="flagResponsiveScreen" id="flagpositionFix">
+    <div *ngFor="let illustration of siteIllustrations; let i=index" class="illustrationResponsive">
+      <template [ngIf]="i<((bodyDynamics.chapterBubbles.length)/5)"><img
+        [src]="'../../'+illustration.illustrationLeft"
+        class="illustration-left"/></template>
+    </div>
+  </div>
+  <div class="responsiveBubbles" align="center">
+    <img [src]="bodyDynamics.chapterFlag" class="flagResponsiveHandy">
+    <div class="bubble" *ngFor="let cont of bodyDynamics.chapterBubbles; let i=index">
+      <section class="bubble-text">
+        <p id="studentText">
+          {{cont.studentText}}
+        </p>
+      </section>
+
+      <img (mouseover)="bodyDynamics.changeShowBubbleSidetext(i)"
+           (mouseleave)="bodyDynamics.changeShowBubbleSidetext(i)" id="pictureInBubble"
+           [src]="bodyDynamics.assignPictureInBubble(bodyDynamics.chapterBubbles[i])" height="40" width="40"/>
+
+
+      <section *ngIf="bodyDynamics.sideTextBooleanArray[i]" [innerHTML]="bodyDynamics.formatDate(cont.fromDate, i)" class="left-arrow">
+      </section>
+      <section *ngIf="bodyDynamics.sideTextBooleanArray[i]" class="left-arrow-blue">
+      </section>
+      <section *ngIf="bodyDynamics.sideTextBooleanArray[i]" class="left-arrow-white">
+      </section>
+
+      <p id="numberFont">
+        {{cont.number}}
+    </div>
+  </div>
+  <div id="illustrationRight">
+    <div *ngFor="let illustration of siteIllustrations; let i=index" class="illustrationResponsive">
+      <template [ngIf]="i<((bodyDynamics.chapterBubbles.length)/5)"><img
+        [src]="'../../'+illustration.illustrationRight"
+        class="illustration-right"/></template>
+    </div>
+  </div>
+</div>
+
+<input type="submit" [style.background-image]="'url('+bodyDynamics.buttonUp+')'" id="scrollButtonTop"
+       onclick="window.scrollBy({top: -300, left: 0,  behavior: 'smooth'});">
+<input type="submit" [style.background-image]="'url('+bodyDynamics.buttonDown+')'" id="scrollButtonBottom"
+       onclick="window.scrollBy({top: 300, left: 0, behavior: 'smooth' });">

@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<div class="imgcontainer">
+  <img src="images/delete-profile.png" alt="TrashIcon">
+</div>
+
+<p id="siteTitle" class="divCenter">PROFIL LÖSCHEN</p>
+
+<table align="center">
+  <colgroup>
+    <col width="100">
+    <col width="300">
+    <col width="100">
+  </colgroup>
+  <tr>
+    <td align="center" valign="middle" id="fontPassword">PASSWORT*</td>
+    <td align="center" valign="middle"><input type="password" id="passwordField" class="field-border"></td>
+    <td> </td>
+  </tr>
+</table>
+
+<div class="divCenter">
+  <button type="submit" id="deleteButton" (click)="deleteAccount()">LÖSCHEN</button>
+</div>
+
+<app-notification-advice [(visible)]="notificationService.advice.show"></app-notification-advice>
+<app-notification-confirmation [(visible)]="notificationService.confirmation.show"></app-notification-confirmation>
+<app-notification-warning [(visible)]="notificationService.warning.show"></app-notification-warning>
